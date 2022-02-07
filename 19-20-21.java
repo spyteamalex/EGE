@@ -87,7 +87,7 @@ public class Main {
             return false;
         }
         boolean f = false;
-        for (int i : moves)      //перебор всех ходов протагониста(вместо moves может быть массив типов ходов)
+        for (int i : moves)      //перебор всех ходов протагониста
         {
             List<Integer> arr1 = new ArrayList<>(arr);
             arr1.add(i);
@@ -112,7 +112,7 @@ public class Main {
             return false;
         }
         boolean f = true;
-        for (int i : moves)      //перебор всех ходов антагониста(вместо range(4) может быть массив типов ходов)
+        for (int i : moves)      //перебор всех ходов антагониста
         {
             List<Integer> arr1 = new ArrayList<>(arr);
             arr1.add(i);

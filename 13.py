@@ -1,4 +1,4 @@
-neighbours = {
+neighbors = {
     'А': 'БВГ',   #из А можно добраться в Б, В, Г
     'Б': 'ВД',
     'В': 'ЖД',
@@ -19,7 +19,7 @@ def cnt(frm, to, need='', banned=''):
         return 0
     if frm == to:
         return int(len(need) == 0)
-    return sum([cnt(i, to, need, banned) for i in neighbours[frm]])
+    return sum([cnt(i, to, need, banned) for i in neighbors[frm]])
 
 
 cnt('А', 'К')  # кол-во способов попасть из А в К
